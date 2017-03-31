@@ -12,7 +12,7 @@ test_t::test_t(const char* const p_buffer, const size_t p_buffer_size) :
   std::cout << "\n";
 }
 
-test_t::later() {
+void test_t::later() {
   std::cout << "buffer size later: " << buffer_size
             << ", at address " << (void*)buffer << "\n";
   for (int i=0; i<buffer_size; ++i) {
