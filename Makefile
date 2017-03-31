@@ -11,8 +11,6 @@ run:
 	javac *.java
 	java Tester
 
-#	g++ -fPIC -std=c++11 test_wrap.cpp -I$(JNI_HEADERS1) -I$(JNI_HEADERS2) -o test_wrap.o
-#	ld -G test_wrap.o test.o -o libtest.so -lstdc++
+clean:
+	rm -rf *.class Test.java test_* test.o test_wrap.o libtest.so
 
-#	ld -G test_wrap.o test.o -o libtest.so -L/lib -L/usr/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-redhat-linux/4.8.3/crtendS.o /usr/bin/../lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crtn.o
-#	ld -G test_wrap.o test.o -o libtest.so -L/usr/bin/../lib/gcc/x86_64-redhat-linux/4.8.3 -L/usr/bin/../lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/bin/../lib/gcc/x86_64-redhat-linux/4.8.3/../../.. -L/lib -L/usr/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-redhat-linux/4.8.3/crtendS.o /usr/bin/../lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crtn.o

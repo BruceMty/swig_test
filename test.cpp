@@ -8,6 +8,7 @@ test_t::test_t(const char* const p_buffer, const size_t p_buffer_size) :
             << ", at address " << (void*)buffer << "\n";
   for (int i=0; i<buffer_size; ++i) {
     std::cout << buffer[i];
+//    std::cout << buffer[i] << "(" << (int)buffer[i] << ")";
   }
   std::cout << "\n";
 }
@@ -17,6 +18,7 @@ void test_t::later() {
             << ", at address " << (void*)buffer << "\n";
   for (int i=0; i<buffer_size; ++i) {
     std::cout << buffer[i];
+//    std::cout << buffer[i] << "(" << (int)buffer[i] << ")";
   }
   std::cout << "\n";
 }

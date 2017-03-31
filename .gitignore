@@ -1,0 +1,7 @@
+test_*
+*.swp
+*.class
+Test.java
+*.o
+*.so
+
